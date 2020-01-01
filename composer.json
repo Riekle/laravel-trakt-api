@@ -20,10 +20,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "DucksCode\\Trakt\\ServiceProviders\\TraktServiceProvider"
+                "DucksCode\\Trakt\\TraktServiceProvider"
             ],
             "aliases": {
-                "Trakt": "DucksCode\\Trakt\\Facades\\TraktFacade"
+                "Trakt": "DucksCode\\Trakt\\Facades\\Trakt"
             }
         }
     }

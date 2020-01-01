@@ -8,7 +8,7 @@ namespace DucksCode\Trakt\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class TraktFacade extends Facade {
+class Trakt extends Facade {
 	protected static function getFacadeAccessor()
 	{
 		return 'trakt';

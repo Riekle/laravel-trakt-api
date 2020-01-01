@@ -18,4 +18,16 @@ return [
 	 * The URL for oauth authentication via the trakt.tv website. This differs from the api link.
 	 */
 	'oauth_url' => env('TRAKT_OAUTH_URL', 'https://trakt.tv/oauth/authorize'),
+
+	/*
+    |--------------------------------------------------------------------------
+    | URI Address Path
+    |--------------------------------------------------------------------------
+    |
+    | Use this path value to determine on what URI we are going to serve.
+    | For example, if you wanted to serve it at a different prefix
+    | like www.example.com/new-trakt-uri, change the value to 'new-trakt-uri'.
+    |
+    */
+    'path' => env('TRAKT_WEB_URI', 'trakt'),
 ];
