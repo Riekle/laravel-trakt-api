@@ -1,15 +1,30 @@
 {
     "name": "duckscode/trakt",
-    "description": "Package to connect webapp to the Trakt API",
-    "require": {
-        "guzzlehttp/guzzle": "^7.0@dev"
-    },
+    "description": "Package for Trakt API implementation in Laravel 6",
     "license": "GNU GPLv3",
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "authors": [
         {
             "name": "Riekle Siersma",
             "email": "riekle@users.noreply.github.com"
         }
-    ]
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "DucksCode\\Trakt\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DucksCode\\Trakt\\ServiceProviders\\TraktServiceProvider"
+            ],
+            "aliases": {
+                "Trakt": "DucksCode\\Trakt\\Facades\\TraktFacade"
+            }
+        }
+    }
 }
