@@ -1,0 +1,15 @@
+{
+    "name": "duckscode/trakt",
+    "description": "Package to connect webapp to the Trakt API",
+    "require": {
+        "guzzlehttp/guzzle": "^7.0@dev"
+    },
+    "license": "GNU GPLv3",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Riekle Siersma",
+            "email": "riekle@users.noreply.github.com"
+        }
+    ]
+}
